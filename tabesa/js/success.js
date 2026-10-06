@@ -1,0 +1,1 @@
+const o=JSON.parse(localStorage.getItem('tabesaLastOrder')||'null');document.getElementById('order-details').innerHTML=o?`<div class="about-box"><p><strong>Order #${o.number}</strong></p><p>Customer: ${o.name}</p><p>Payment: ${o.payment}</p><p>Total: <strong>₱${Number(o.total).toFixed(2)}</strong></p><p>Delivery to: ${o.address}</p></div>`:'<p>Thank you for visiting TABESA!</p>';
